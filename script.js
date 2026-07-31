@@ -48,4 +48,7 @@ function showScene(sceneId) {
 
 }
 
+document.getElementById("characterCreator").style.display = "block";
+document.getElementById("game").style.display = "none";
+
 loadStory();

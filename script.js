@@ -27,7 +27,20 @@ async function loadStory() {
 function showScene(sceneId) {
 
     currentScene = story.scenes[sceneId];
-
+document.getElementById("playerStats").innerHTML = `
+<h2>${player.name}</h2>
+<p>
+Age: ${player.age}<br>
+Gender: ${player.gender}<br>
+Sex: ${player.sex}<br>
+Pronouns: ${player.pronouns}<br>
+Height: ${player.height} cm<br>
+Weight: ${player.weight} kg<br>
+Hair: ${player.hairColor}<br>
+Eyes: ${player.eyeColor}<br>
+Species: ${player.species}
+</p>
+`;
     document.getElementById("story").textContent = currentScene.text;
 
     const choices = document.getElementById("choices");

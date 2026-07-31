@@ -1,0 +1,49 @@
+{
+  "start": {
+    "text": "You wake up in a strange glowing room. Three mysterious doors stand before you.",
+    "choices": [
+      {
+        "text": "🚪 Red Door",
+        "next": "dragon"
+      },
+      {
+        "text": "🚪 Blue Door",
+        "next": "wizard"
+      },
+      {
+        "text": "🚪 Green Door",
+        "next": "vampire"
+      }
+    ]
+  },
+
+  "dragon": {
+    "text": "You open the red door and begin transforming into a dragon.",
+    "choices": [
+      {
+        "text": "Restart",
+        "next": "start"
+      }
+    ]
+  },
+
+  "wizard": {
+    "text": "You open the blue door and begin transforming into a wizard.",
+    "choices": [
+      {
+        "text": "Restart",
+        "next": "start"
+      }
+    ]
+  },
+
+  "vampire": {
+    "text": "You open the green door and begin transforming into a vampire.",
+    "choices": [
+      {
+        "text": "Restart",
+        "next": "start"
+      }
+    ]
+  }
+}

@@ -27,6 +27,9 @@ async function loadStory() {
 function showScene(sceneId) {
 
     currentScene = story.scenes[sceneId];
+if (currentScene.transform) {
+    Object.assign(player, currentScene.transform);
+}
 document.getElementById("playerStats").innerHTML = `
 <h2>${player.name}</h2>
 <p>

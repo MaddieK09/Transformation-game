@@ -80,8 +80,8 @@ player.eyeColor =
     document.getElementById("playerEyeColor").value;
 
 player.species =
-    document.getElementById("playerSpecies").value;
-    document.getElementById("characterCreator").style.display = "none";
+document.getElementById("playerSpecies").value;   
+document.getElementById("characterCreator").style.display = "none";
 
     document.getElementById("game").style.display = "block";
 loadStory();

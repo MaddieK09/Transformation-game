@@ -51,7 +51,7 @@ function showScene(sceneId) {
 document.getElementById("characterCreator").style.display = "block";
 document.getElementById("game").style.display = "none";
 
-loadStory();
+
 
 document.getElementById("startAdventure").onclick = () => {
 
@@ -60,5 +60,5 @@ document.getElementById("startAdventure").onclick = () => {
     document.getElementById("characterCreator").style.display = "none";
 
     document.getElementById("game").style.display = "block";
-
+loadStory();
 };

@@ -88,7 +88,7 @@ player.weight =
 
 player.hairColor =
     document.getElementById("playerHairColor").value;
-<script src="script.js?v=2"></script>
+
 player.eyeColor =
     document.getElementById("playerEyeColor").value;
 

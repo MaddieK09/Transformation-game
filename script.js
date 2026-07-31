@@ -56,7 +56,31 @@ document.getElementById("game").style.display = "none";
 document.getElementById("startAdventure").onclick = () => {
 
     player.name = document.getElementById("playerName").value || "Player";
+player.age = Number(document.getElementById("playerAge").value);
 
+player.gender =
+    document.getElementById("playerGender").value;
+
+player.sex =
+    document.getElementById("playerSex").value;
+
+player.pronouns =
+    document.getElementById("playerPronouns").value;
+
+player.height =
+    Number(document.getElementById("playerHeight").value);
+
+player.weight =
+    Number(document.getElementById("playerWeight").value);
+
+player.hairColor =
+    document.getElementById("playerHairColor").value;
+
+player.eyeColor =
+    document.getElementById("playerEyeColor").value;
+
+player.species =
+    document.getElementById("playerSpecies").value;
     document.getElementById("characterCreator").style.display = "none";
 
     document.getElementById("game").style.display = "block";

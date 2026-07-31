@@ -21,15 +21,28 @@
       ]
     },
 
-    "dragon": {
-      "text": "You open the red door and begin transforming into a dragon.",
-      "choices": [
-        {
-          "text": "Restart",
-          "next": "intro"
-        }
-      ]
+"dragon": {
+    "text": "You open the red door. Heat races through your body as scales spread across your skin, your frame expands, and powerful wings unfold behind you. You have transformed into a dragon.",
+    "transform": {
+        "name": "Drakon",
+        "age": 120,
+        "gender": "Male",
+        "sex": "Male",
+        "pronouns": "he/him",
+        "height": 320,
+        "weight": 450,
+        "hairColor": "None",
+        "eyeColor": "Gold",
+        "species": "Dragon",
+        "form": "Dragon"
     },
+    "choices": [
+        {
+            "text": "Restart",
+            "next": "intro"
+        }
+    ]
+},
 
     "wizard": {
       "text": "You open the blue door and begin transforming into a wizard.",

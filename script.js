@@ -1,23 +1,25 @@
-let story = {};
-let currentScene = "start";
+let story;
+let currentScene;
 
 async function loadStory() {
     const response = await fetch("story.json");
     story = await response.json();
-    showScene(currentScene);
+
+    showScene(story.start);
 }
 
 function showScene(sceneId) {
-    currentScene = sceneId;
 
-    const scene = story[sceneId];
+    currentScene = story.scenes[sceneId];
 
-    document.getElementById("story").textContent = scene.text;
+    document.getElementById("story").textContent = currentScene.text;
 
     const choices = document.getElementById("choices");
+
     choices.innerHTML = "";
 
-    scene.choices.forEach(choice => {
+    currentScene.choices.forEach(choice => {
+
         const button = document.createElement("button");
 
         button.textContent = choice.text;
@@ -25,7 +27,9 @@ function showScene(sceneId) {
         button.onclick = () => showScene(choice.next);
 
         choices.appendChild(button);
+
     });
+
 }
 
 loadStory();

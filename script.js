@@ -1,62 +1,31 @@
-const story = document.getElementById("story");
-const choices = document.getElementById("choices");
+let story = {};
+let currentScene = "start";
 
-function showStart(){
+async function loadStory() {
+    const response = await fetch("story.json");
+    story = await response.json();
+    showScene(currentScene);
+}
 
-    story.textContent =
-    "You wake up in a strange glowing room. Three doors stand before you.";
+function showScene(sceneId) {
+    currentScene = sceneId;
 
+    const scene = story[sceneId];
+
+    document.getElementById("story").textContent = scene.text;
+
+    const choices = document.getElementById("choices");
     choices.innerHTML = "";
 
-    addChoice("🚪 Red Door", redDoor);
-    addChoice("🚪 Blue Door", blueDoor);
-    addChoice("🚪 Green Door", greenDoor);
+    scene.choices.forEach(choice => {
+        const button = document.createElement("button");
 
+        button.textContent = choice.text;
+
+        button.onclick = () => showScene(choice.next);
+
+        choices.appendChild(button);
+    });
 }
 
-function addChoice(text, action){
-
-    const button = document.createElement("button");
-
-    button.textContent = text;
-
-    button.onclick = action;
-
-    choices.appendChild(button);
-
-}
-
-function redDoor(){
-
-    story.textContent =
-    "You open the red door and begin transforming into a dragon.";
-
-    choices.innerHTML = "";
-
-    addChoice("Restart", showStart);
-
-}
-
-function blueDoor(){
-
-    story.textContent =
-    "You open the blue door and begin transforming into a wizard.";
-
-    choices.innerHTML = "";
-
-    addChoice("Restart", showStart);
-
-}
-
-function greenDoor(){
-
-    story.textContent =
-    "You open the green door and begin transforming into a vampire.";
-
-    choices.innerHTML = "";
-
-    addChoice("Restart", showStart);
-
-}
-
-showStart();
+loadStory();

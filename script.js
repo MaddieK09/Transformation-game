@@ -1,6 +1,22 @@
 let story;
 let currentScene;
 
+let player = {
+
+    name: "Jake",
+
+    form: "Human",
+
+    species: "Human",
+
+    gender: "Male",
+
+    inventory: [],
+
+    flags: {}
+
+};
+
 async function loadStory() {
     const response = await fetch("story.json");
     story = await response.json();

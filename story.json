@@ -1,49 +1,55 @@
 {
-  "start": {
-    "text": "You wake up in a strange glowing room. Three mysterious doors stand before you.",
-    "choices": [
-      {
-        "text": "🚪 Red Door",
-        "next": "dragon"
-      },
-      {
-        "text": "🚪 Blue Door",
-        "next": "wizard"
-      },
-      {
-        "text": "🚪 Green Door",
-        "next": "vampire"
-      }
-    ]
-  },
+  "start": "intro",
 
-  "dragon": {
-    "text": "You open the red door and begin transforming into a dragon.",
-    "choices": [
-      {
-        "text": "Restart",
-        "next": "start"
-      }
-    ]
-  },
+  "scenes": {
 
-  "wizard": {
-    "text": "You open the blue door and begin transforming into a wizard.",
-    "choices": [
-      {
-        "text": "Restart",
-        "next": "start"
-      }
-    ]
-  },
+    "intro": {
+      "text": "You wake up in a strange glowing room. Three mysterious doors stand before you.",
+      "choices": [
+        {
+          "text": "🚪 Red Door",
+          "next": "dragon"
+        },
+        {
+          "text": "🚪 Blue Door",
+          "next": "wizard"
+        },
+        {
+          "text": "🚪 Green Door",
+          "next": "vampire"
+        }
+      ]
+    },
 
-  "vampire": {
-    "text": "You open the green door and begin transforming into a vampire.",
-    "choices": [
-      {
-        "text": "Restart",
-        "next": "start"
-      }
-    ]
+    "dragon": {
+      "text": "You open the red door and begin transforming into a dragon.",
+      "choices": [
+        {
+          "text": "Restart",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "wizard": {
+      "text": "You open the blue door and begin transforming into a wizard.",
+      "choices": [
+        {
+          "text": "Restart",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "vampire": {
+      "text": "You open the green door and begin transforming into a vampire.",
+      "choices": [
+        {
+          "text": "Restart",
+          "next": "intro"
+        }
+      ]
+    }
+
   }
 }

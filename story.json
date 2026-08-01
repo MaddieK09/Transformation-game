@@ -100,6 +100,23 @@
       "next": "dragonCrossroads"
     }
   ]
+},
+"dragonFortress": {
+  "text": "Drakon lands on the ancient stone fortress. Broken towers surround him. A gigantic golden egg rests on a pedestal in the center of the ruins.",
+  "choices": [
+    {
+      "text": "🥚 Inspect the egg",
+      "next": "dragonEgg"
+    },
+    {
+      "text": "🐉 Call into the ruins",
+      "next": "dragonRuins"
+    },
+    {
+      "text": "⬅️ Return to the mountains",
+      "next": "dragonMountains"
+    }
+  ]
 }
   }
 }

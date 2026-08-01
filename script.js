@@ -29,7 +29,7 @@ function showScene(sceneId) {
 currentScene = story.scenes[sceneId];
 
 if (sceneId === story.start && originalPlayer) {
-    player = structuredClone(originalPlayer);
+    player = JSON.parse(JSON.stringify(originalPlayer));
 }
 
 if (currentScene.transform) {
@@ -103,7 +103,7 @@ player.eyeColor =
 
 player.species =
 document.getElementById("playerSpecies").value;   
-originalPlayer = structuredClone(player);
+originalPlayer = JSON.parse(JSON.stringify(player));
 document.getElementById("characterCreator").style.display = "none";
 
     document.getElementById("game").style.display = "block";

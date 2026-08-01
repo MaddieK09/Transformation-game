@@ -1,6 +1,6 @@
 let story;
 let currentScene;
-
+let originalPlayer;
 let player = {
 
     name: "Jake",
@@ -97,6 +97,7 @@ player.eyeColor =
 
 player.species =
 document.getElementById("playerSpecies").value;   
+originalPlayer = structuredClone(player);
 document.getElementById("characterCreator").style.display = "none";
 
     document.getElementById("game").style.display = "block";

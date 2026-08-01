@@ -18,7 +18,7 @@ let player = {
 };
 
 async function loadStory() {
-const response = await fetch("story.json?version=2");
+const response = await fetch(`story.json?v=${Date.now()}`);
     story = await response.json();
 
     showScene(story.start);
@@ -27,7 +27,11 @@ const response = await fetch("story.json?version=2");
 function showScene(sceneId) {
 
 currentScene = story.scenes[sceneId];
-
+if (!currentScene) {
+    alert(`Scene "${sceneId}" was not found in story.json.`);
+    console.error(`Missing scene: ${sceneId}`);
+    return;
+}
 if (sceneId === story.start && originalPlayer) {
     player = JSON.parse(JSON.stringify(originalPlayer));
 }

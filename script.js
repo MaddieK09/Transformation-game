@@ -18,10 +18,19 @@ let player = {
 };
 
 async function loadStory() {
-const response = await fetch(`story.json?v=${Date.now()}`);
-    story = await response.json();
+  try {
+    const response = await fetch(`story.json?v=${Date.now()}`);
 
+    if (!response.ok) {
+      throw new Error(`Could not load story.json. HTTP ${response.status}`);
+    }
+
+    story = await response.json();
     showScene(story.start);
+  } catch (error) {
+    console.error("Story loading failed:", error);
+    alert(`Story loading failed: ${error.message}`);
+  }
 }
 
 function showScene(sceneId) {

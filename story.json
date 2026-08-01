@@ -66,7 +66,23 @@
           "next": "intro"
         }
       ]
+    },
+"dragonCrossroads": {
+  "text": "You spread your wings and leap into the sky. A vast mountain range stretches before you. Where will Drakon go?",
+  "choices": [
+    {
+      "text": "🏔️ Fly to the mountains",
+      "next": "dragonMountains"
+    },
+    {
+      "text": "🌲 Explore the forest",
+      "next": "dragonForest"
+    },
+    {
+      "text": "🏰 Attack the nearby kingdom",
+      "next": "dragonKingdom"
     }
-
+  ]
+}'
   }
 }

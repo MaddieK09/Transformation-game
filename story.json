@@ -118,5 +118,39 @@
     }
   ]
 }
-  }
+"dragonEgg": {
+  "text": "As Drakon approaches, the enormous golden egg begins to glow. Tiny cracks spread across its shell. Something inside taps back when you touch it.",
+  "choices": [
+    {
+      "text": "🥚 Stay and watch",
+      "next": "dragonHatch"
+    },
+    {
+      "text": "🪽 Pick up the egg",
+      "next": "dragonCarryEgg"
+    },
+    {
+      "text": "⬅️ Return to the fortress",
+      "next": "dragonFortress"
+    }
+  ]
+},
+"dragonHatch": {
+  "text": "The golden shell cracks apart in a burst of warm light. A tiny dragon emerges, blinking up at Drakon before letting out a squeaky roar.",
+  "choices": [
+    {
+      "text": "🐉 Protect the hatchling",
+      "next": "dragonProtectHatchling"
+    },
+    {
+      "text": "🔍 Examine the broken shell",
+      "next": "dragonShell"
+    },
+    {
+      "text": "⬅️ Return to the egg chamber",
+      "next": "dragonEgg"
+    }
+  ]
+},
+    }
 }

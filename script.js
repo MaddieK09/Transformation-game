@@ -28,6 +28,15 @@ async function loadStory() {
 function showScene(sceneId) {
 
     currentScene = story.scenes[sceneId];
+    currentScene = story.scenes[sceneId];
+
+31     if (sceneId === story.start && originalPlayer) {
+32         player = structuredClone(originalPlayer);
+33     }
+
+34     if (currentScene.transform) {
+35         Object.assign(player, currentScene.transform);
+36     }
 if (currentScene.transform) {
     Object.assign(player, currentScene.transform);
 }

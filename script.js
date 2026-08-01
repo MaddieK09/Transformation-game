@@ -1,6 +1,7 @@
 let story;
 let currentScene;
 let originalPlayer;
+let originalPlayer;
 let player = {
 
     name: "Jake",

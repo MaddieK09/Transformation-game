@@ -117,9 +117,9 @@
       "next": "dragonMountains"
     }
   ]
-}
+},
 "dragonEgg": {
-  "text": "As Drakon approaches, the enormous golden egg begins to glow. Tiny cracks spread across its shell. Something inside taps back when you touch it.",
+  "text": "As Drakon approaches, the enormous golden egg begins to glow. Tiny cracks spread across its shell. Something inside taps back when he touches it.",
   "choices": [
     {
       "text": "🥚 Stay and watch",
@@ -152,5 +152,53 @@
     }
   ]
 },
+"dragonProtectHatchling": {
+  "text": "Drakon curls one immense wing around the tiny hatchling. The baby chirps happily and presses against his scales. From deep within the fortress, heavy footsteps begin approaching.",
+  "choices": [
+    {
+      "text": "⚔️ Face the intruder",
+      "next": "dragonGuardian"
+    },
+    {
+      "text": "🏃 Escape with the hatchling",
+      "next": "dragonEscape"
+    },
+    {
+      "text": "⬅️ Return to the hatchling",
+      "next": "dragonHatch"
+    }
+  ]
+},
+"dragonShell": {
+  "text": "The shattered shell glitters with ancient runes. One fragment pulses with magical energy while another contains a faded map.",
+  "choices": [
+    {
+      "text": "✨ Touch the glowing rune",
+      "next": "dragonRune"
+    },
+    {
+      "text": "🗺️ Study the map",
+      "next": "dragonMap"
+    },
+    {
+      "text": "⬅️ Return to the hatchling",
+      "next": "dragonHatch"
+    }
+  ]
+},
+"dragonCarryEgg": {
+  "text": "Drakon carefully lifts the golden egg. It is surprisingly warm. As he carries it away, the fortress begins to shake violently.",
+  "choices": [
+    {
+      "text": "🏃 Fly away",
+      "next": "dragonEscape"
+    },
+    {
+      "text": "⬅️ Put the egg back",
+      "next": "dragonEgg"
+    }
+  ]
+}
+}
     }
 }

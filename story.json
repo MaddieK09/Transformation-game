@@ -1,8 +1,6 @@
 {
   "start": "intro",
-
   "scenes": {
-
     "intro": {
       "text": "You wake up in a strange glowing room. Three mysterious doors stand before you.",
       "choices": [
@@ -21,9 +19,9 @@
       ]
     },
 
-"dragon": {
-    "text": "You open the red door. Heat races through your body as scales spread across your skin, your frame expands, and powerful wings unfold behind you. You have transformed into a dragon.",
-    "transform": {
+    "dragon": {
+      "text": "You open the red door. Heat races through your body as scales spread across your skin, your frame expands, and powerful wings unfold behind you. You have transformed into a dragon.",
+      "transform": {
         "name": "Drakon",
         "age": 120,
         "gender": "Male",
@@ -35,169 +33,749 @@
         "eyeColor": "Gold",
         "species": "Dragon",
         "form": "Dragon"
-    },
-"choices": [
-  {
-    "text": "🐉 Continue as Drakon",
-    "next": "dragonCrossroads"
-  },
-  {
-    "text": "↩️ Restart",
-    "next": "intro"
-  }
-]
-},
-
-    "wizard": {
-      "text": "You open the blue door and begin transforming into a wizard.",
+      },
       "choices": [
         {
-          "text": "Restart",
+          "text": "🐉 Continue as Drakon",
+          "next": "dragonCrossroads"
+        },
+        {
+          "text": "↩️ Restart",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "wizard": {
+      "text": "You open the blue door. Blue light coils around your arms as your clothes reshape into layered robes and a carved staff appears in your hand. You have transformed into a wizard.",
+      "transform": {
+        "name": "Alden",
+        "age": 42,
+        "gender": "Male",
+        "sex": "Male",
+        "pronouns": "he/him",
+        "height": 181,
+        "weight": 76,
+        "hairColor": "Silver",
+        "eyeColor": "Violet",
+        "species": "Human",
+        "form": "Wizard"
+      },
+      "choices": [
+        {
+          "text": "✨ Return to the glowing room",
           "next": "intro"
         }
       ]
     },
 
     "vampire": {
-      "text": "You open the green door and begin transforming into a vampire.",
+      "text": "You open the green door. A chill slips through your body as your skin pales, your senses sharpen, and your teeth lengthen into fangs. You have transformed into a vampire.",
+      "transform": {
+        "name": "Selene",
+        "age": 187,
+        "gender": "Female",
+        "sex": "Female",
+        "pronouns": "she/her",
+        "height": 170,
+        "weight": 59,
+        "hairColor": "Black",
+        "eyeColor": "Crimson",
+        "species": "Vampire",
+        "form": "Vampire"
+      },
       "choices": [
         {
-          "text": "Restart",
+          "text": "🦇 Return to the glowing room",
           "next": "intro"
         }
       ]
     },
-"dragonCrossroads": {
-  "text": "You spread your wings and leap into the sky. A vast mountain range stretches before you. Where will Drakon go?",
-  "choices": [
-    {
-      "text": "🏔️ Fly to the mountains",
-      "next": "dragonMountains"
+
+    "dragonCrossroads": {
+      "text": "You spread your wings and leap into the sky. A vast mountain range stretches before you. Where will Drakon go?",
+      "choices": [
+        {
+          "text": "🏔️ Fly to the mountains",
+          "next": "dragonMountains"
+        },
+        {
+          "text": "🌲 Explore the forest",
+          "next": "dragonForest"
+        },
+        {
+          "text": "🏰 Attack the nearby kingdom",
+          "next": "dragonKingdom"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
     },
-    {
-      "text": "🌲 Explore the forest",
-      "next": "dragonForest"
+
+    "dragonMountains": {
+      "text": "Drakon beats his enormous wings and climbs toward the frozen mountain peaks. Snow whips across his scales as he spots a ruined stone fortress built into the cliffside. A deep roar echoes from somewhere inside.",
+      "choices": [
+        {
+          "text": "🏰 Land at the ruined fortress",
+          "next": "dragonFortress"
+        },
+        {
+          "text": "🔥 Answer the roar",
+          "next": "dragonRival"
+        },
+        {
+          "text": "↩️ Return to the crossroads",
+          "next": "dragonCrossroads"
+        }
+      ]
     },
-    {
-      "text": "🏰 Attack the nearby kingdom",
-      "next": "dragonKingdom"
+
+    "dragonFortress": {
+      "text": "Drakon lands on the ancient stone fortress. Broken towers surround him. A gigantic golden egg rests on a pedestal in the center of the ruins.",
+      "choices": [
+        {
+          "text": "🥚 Inspect the egg",
+          "next": "dragonEgg"
+        },
+        {
+          "text": "🐉 Call into the ruins",
+          "next": "dragonRuins"
+        },
+        {
+          "text": "⬅️ Return to the mountains",
+          "next": "dragonMountains"
+        }
+      ]
+    },
+
+    "dragonEgg": {
+      "text": "As Drakon approaches, the enormous golden egg begins to glow. Tiny cracks spread across its shell. Something inside taps back when he touches it.",
+      "choices": [
+        {
+          "text": "🥚 Stay and watch",
+          "next": "dragonHatch"
+        },
+        {
+          "text": "🪽 Pick up the egg",
+          "next": "dragonCarryEgg"
+        },
+        {
+          "text": "⬅️ Return to the fortress",
+          "next": "dragonFortress"
+        }
+      ]
+    },
+
+    "dragonHatch": {
+      "text": "The golden shell cracks apart in a burst of warm light. A tiny dragon emerges, blinking up at Drakon before letting out a squeaky roar.",
+      "choices": [
+        {
+          "text": "🐉 Protect the hatchling",
+          "next": "dragonProtectHatchling"
+        },
+        {
+          "text": "🔍 Examine the broken shell",
+          "next": "dragonShell"
+        },
+        {
+          "text": "⬅️ Return to the egg chamber",
+          "next": "dragonEgg"
+        }
+      ]
+    },
+
+    "dragonProtectHatchling": {
+      "text": "Drakon curls one immense wing around the tiny hatchling. The baby chirps happily and presses against his scales. From deep within the fortress, heavy footsteps begin approaching.",
+      "choices": [
+        {
+          "text": "⚔️ Face the intruder",
+          "next": "dragonGuardian"
+        },
+        {
+          "text": "🏃 Escape with the hatchling",
+          "next": "dragonEscape"
+        },
+        {
+          "text": "⬅️ Return to the hatchling",
+          "next": "dragonHatch"
+        }
+      ]
+    },
+
+    "dragonGuardian": {
+      "text": "The massive stone doors burst open. An ancient silver dragon steps into the chamber, studying Drakon and the hatchling with glowing blue eyes.",
+      "choices": [
+        {
+          "text": "🗣️ Speak peacefully",
+          "next": "dragonPeace"
+        },
+        {
+          "text": "⚔️ Fight",
+          "next": "dragonFight"
+        },
+        {
+          "text": "⬅️ Return to the hatchling",
+          "next": "dragonProtectHatchling"
+        }
+      ]
+    },
+
+    "dragonPeace": {
+      "text": "The ancient guardian lowers his head. He explains that the hatchling is the last heir of a vanished dragon clan and asks whether Drakon will protect it.",
+      "choices": [
+        {
+          "text": "🐉 Accept the guardian's blessing",
+          "next": "dragonBlessing"
+        },
+        {
+          "text": "🥚 Ask about the hatchling",
+          "next": "dragonHatchlingLore"
+        },
+        {
+          "text": "⬅️ Return to the guardian",
+          "next": "dragonGuardian"
+        }
+      ]
+    },
+
+    "dragonBlessing": {
+      "text": "The guardian presses one claw to Drakon's brow. Silver light spreads across his scales, granting him the power to shield the hatchling from harm.",
+      "choices": [
+        {
+          "text": "🌤️ Leave the fortress with the hatchling",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "⬅️ Return to the guardian",
+          "next": "dragonPeace"
+        }
+      ]
+    },
+
+    "dragonHatchlingLore": {
+      "text": "The guardian reveals that the hatchling can awaken ancient dragon roads hidden across the world. Whoever raises it may decide whether dragons return in peace or conquest.",
+      "choices": [
+        {
+          "text": "🤝 Promise to raise it peacefully",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "👑 Claim its future for yourself",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "⬅️ Return to the guardian",
+          "next": "dragonPeace"
+        }
+      ]
+    },
+
+    "dragonFight": {
+      "text": "Drakon lunges. The silver guardian meets him with a thunderous clash of claws and wings, shaking dust from the ruined ceiling.",
+      "choices": [
+        {
+          "text": "🔥 Use dragonfire",
+          "next": "dragonFightFire"
+        },
+        {
+          "text": "🛡️ Defend the hatchling",
+          "next": "dragonFightDefend"
+        },
+        {
+          "text": "🏳️ Stop fighting",
+          "next": "dragonPeace"
+        }
+      ]
+    },
+
+    "dragonFightFire": {
+      "text": "Drakon unleashes a torrent of flame. The guardian withstands it, but the ancient pillars crack and the chamber begins collapsing.",
+      "choices": [
+        {
+          "text": "🏃 Grab the hatchling and escape",
+          "next": "dragonEscape"
+        },
+        {
+          "text": "⚔️ Keep attacking",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "🏳️ Call a truce",
+          "next": "dragonPeace"
+        }
+      ]
+    },
+
+    "dragonFightDefend": {
+      "text": "Drakon plants himself between the guardian and the hatchling. Seeing that his first instinct is protection, the guardian slowly lowers his claws.",
+      "choices": [
+        {
+          "text": "🗣️ Explain yourself",
+          "next": "dragonPeace"
+        },
+        {
+          "text": "🪽 Escape while you can",
+          "next": "dragonEscape"
+        }
+      ]
+    },
+
+    "dragonShell": {
+      "text": "The shattered shell glitters with ancient runes. One fragment pulses with magical energy while another contains a faded map.",
+      "choices": [
+        {
+          "text": "✨ Touch the glowing rune",
+          "next": "dragonRune"
+        },
+        {
+          "text": "🗺️ Study the map",
+          "next": "dragonMap"
+        },
+        {
+          "text": "⬅️ Return to the hatchling",
+          "next": "dragonHatch"
+        }
+      ]
+    },
+
+    "dragonRune": {
+      "text": "The rune burns with cold light. Images flash through Drakon's mind: hidden dragon sanctuaries, sealed gates, and a crown made of starlight.",
+      "choices": [
+        {
+          "text": "👑 Follow the vision of the crown",
+          "next": "dragonStarCrown"
+        },
+        {
+          "text": "🗺️ Compare the vision to the map",
+          "next": "dragonMap"
+        },
+        {
+          "text": "⬅️ Return to the shell",
+          "next": "dragonShell"
+        }
+      ]
+    },
+
+    "dragonMap": {
+      "text": "The faded map reveals three marked locations: a forest shrine, a royal vault, and a volcanic gate beneath the mountains.",
+      "choices": [
+        {
+          "text": "🌲 Fly to the forest shrine",
+          "next": "dragonForest"
+        },
+        {
+          "text": "🏰 Fly toward the royal vault",
+          "next": "dragonKingdom"
+        },
+        {
+          "text": "🌋 Seek the volcanic gate",
+          "next": "dragonVolcanicGate"
+        },
+        {
+          "text": "⬅️ Return to the shell",
+          "next": "dragonShell"
+        }
+      ]
+    },
+
+    "dragonCarryEgg": {
+      "text": "Drakon carefully lifts the golden egg. It is surprisingly warm. As he carries it away, the fortress begins to shake violently.",
+      "choices": [
+        {
+          "text": "🏃 Fly away",
+          "next": "dragonEscape"
+        },
+        {
+          "text": "⬅️ Put the egg back",
+          "next": "dragonEgg"
+        }
+      ]
+    },
+
+    "dragonEscape": {
+      "text": "Drakon launches through a collapsing archway with the hatchling held safely against his chest. Behind him, the fortress disappears beneath a cloud of snow and stone.",
+      "choices": [
+        {
+          "text": "🌲 Hide in the forest",
+          "next": "dragonForest"
+        },
+        {
+          "text": "🏔️ Search for another mountain refuge",
+          "next": "dragonMountainRefuge"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "dragonMountainRefuge": {
+      "text": "Drakon discovers a warm cavern high above the clouds. The hatchling curls beside him, safe for the moment.",
+      "choices": [
+        {
+          "text": "🌅 Begin a new life as its guardian",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "↩️ Return to the mountains",
+          "next": "dragonMountains"
+        }
+      ]
+    },
+
+    "dragonRuins": {
+      "text": "Drakon's call echoes through the fortress. Ancient dragon statues turn their stone heads toward him, and a hidden stairway opens beneath the pedestal.",
+      "choices": [
+        {
+          "text": "🪜 Descend the hidden stairway",
+          "next": "dragonVolcanicGate"
+        },
+        {
+          "text": "🥚 Return to the egg",
+          "next": "dragonEgg"
+        },
+        {
+          "text": "⬅️ Return to the mountains",
+          "next": "dragonMountains"
+        }
+      ]
+    },
+
+    "dragonRival": {
+      "text": "A scarred red dragon rises from behind the ridge and answers Drakon's roar. It claims the mountains as its territory.",
+      "choices": [
+        {
+          "text": "⚔️ Challenge the rival",
+          "next": "dragonRivalFight"
+        },
+        {
+          "text": "🗣️ Offer an alliance",
+          "next": "dragonRivalAlliance"
+        },
+        {
+          "text": "⬅️ Retreat to the crossroads",
+          "next": "dragonCrossroads"
+        }
+      ]
+    },
+
+    "dragonRivalFight": {
+      "text": "The two dragons collide above the peaks. Drakon gains the upper hand, forcing the rival toward a narrow ledge.",
+      "choices": [
+        {
+          "text": "🤝 Spare the rival",
+          "next": "dragonRivalAlliance"
+        },
+        {
+          "text": "👑 Claim the mountains",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "⬅️ Break away from the fight",
+          "next": "dragonMountains"
+        }
+      ]
+    },
+
+    "dragonRivalAlliance": {
+      "text": "The rival agrees to share the mountain skies. Together, the two dragons uncover routes to places neither could safely reach alone.",
+      "choices": [
+        {
+          "text": "🌋 Explore the volcanic gate",
+          "next": "dragonVolcanicGate"
+        },
+        {
+          "text": "🏰 Approach the kingdom together",
+          "next": "dragonKingdom"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "dragonForest": {
+      "text": "Drakon glides beneath the treetops into an ancient forest glowing with blue mushrooms. A stone shrine stands beside a mirror-still lake.",
+      "choices": [
+        {
+          "text": "🌿 Enter the forest shrine",
+          "next": "dragonForestShrine"
+        },
+        {
+          "text": "💧 Drink from the lake",
+          "next": "dragonLake"
+        },
+        {
+          "text": "↩️ Return to the crossroads",
+          "next": "dragonCrossroads"
+        }
+      ]
+    },
+
+    "dragonForestShrine": {
+      "text": "Inside the shrine, carvings depict dragons taking human form. A crystal altar hums with transformation magic.",
+      "choices": [
+        {
+          "text": "✨ Touch the crystal altar",
+          "next": "dragonHumanForm"
+        },
+        {
+          "text": "🗺️ Search for ancient records",
+          "next": "dragonForestRecords"
+        },
+        {
+          "text": "⬅️ Return to the forest",
+          "next": "dragonForest"
+        }
+      ]
+    },
+
+    "dragonHumanForm": {
+      "text": "Magic folds Drakon's enormous body inward. Wings, claws, and scales vanish until he stands in a tall human-like form with golden eyes and faint scale patterns along his arms.",
+      "transform": {
+        "name": "Drakon",
+        "age": 28,
+        "gender": "Male",
+        "sex": "Male",
+        "pronouns": "he/him",
+        "height": 193,
+        "weight": 92,
+        "hairColor": "Black",
+        "eyeColor": "Gold",
+        "species": "Dragon Shifter",
+        "form": "Human Form"
+      },
+      "choices": [
+        {
+          "text": "🏰 Visit the kingdom in disguise",
+          "next": "dragonKingdomDisguise"
+        },
+        {
+          "text": "🐉 Return to full dragon form",
+          "next": "dragonRestoreForm"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "dragonRestoreForm": {
+      "text": "Drakon releases the shrine's magic. His body expands, scales return, and his immense wings unfold once more.",
+      "transform": {
+        "name": "Drakon",
+        "age": 120,
+        "gender": "Male",
+        "sex": "Male",
+        "pronouns": "he/him",
+        "height": 320,
+        "weight": 450,
+        "hairColor": "None",
+        "eyeColor": "Gold",
+        "species": "Dragon",
+        "form": "Dragon"
+      },
+      "choices": [
+        {
+          "text": "🌲 Return to the forest",
+          "next": "dragonForest"
+        },
+        {
+          "text": "↩️ Return to the crossroads",
+          "next": "dragonCrossroads"
+        }
+      ]
+    },
+
+    "dragonForestRecords": {
+      "text": "The records describe a lost starlight crown capable of stabilizing any transformation and preserving memories between forms.",
+      "choices": [
+        {
+          "text": "👑 Search for the starlight crown",
+          "next": "dragonStarCrown"
+        },
+        {
+          "text": "⬅️ Return to the shrine",
+          "next": "dragonForestShrine"
+        }
+      ]
+    },
+
+    "dragonLake": {
+      "text": "The lake water glows as Drakon drinks. For a moment, he sees every form he might someday become reflected across the surface.",
+      "choices": [
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        },
+        {
+          "text": "🌿 Enter the forest shrine",
+          "next": "dragonForestShrine"
+        },
+        {
+          "text": "⬅️ Return to the forest",
+          "next": "dragonForest"
+        }
+      ]
+    },
+
+    "dragonKingdom": {
+      "text": "Drakon circles above a walled kingdom. Bells ring and soldiers rush onto the battlements as citizens flee the streets below.",
+      "choices": [
+        {
+          "text": "🔥 Attack the walls",
+          "next": "dragonKingdomAttack"
+        },
+        {
+          "text": "🗣️ Land and demand an audience",
+          "next": "dragonKingdomAudience"
+        },
+        {
+          "text": "↩️ Return to the crossroads",
+          "next": "dragonCrossroads"
+        }
+      ]
+    },
+
+    "dragonKingdomAttack": {
+      "text": "Flames race across the outer defenses. The kingdom's royal mages raise a shimmering barrier while a hidden vault begins glowing beneath the castle.",
+      "choices": [
+        {
+          "text": "💥 Break the magical barrier",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "🏰 Dive toward the royal vault",
+          "next": "dragonRoyalVault"
+        },
+        {
+          "text": "🏳️ Stop the attack",
+          "next": "dragonKingdomAudience"
+        }
+      ]
+    },
+
+    "dragonKingdomAudience": {
+      "text": "Drakon lands beyond the city gates. The queen approaches under a white banner and offers information about an ancient dragon crown in exchange for peace.",
+      "choices": [
+        {
+          "text": "🤝 Accept the bargain",
+          "next": "dragonRoyalVault"
+        },
+        {
+          "text": "👑 Demand the crown",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "⬅️ Leave the kingdom",
+          "next": "dragonCrossroads"
+        }
+      ]
+    },
+
+    "dragonKingdomDisguise": {
+      "text": "In human form, Drakon enters the city unnoticed. Rumors lead him to a locked royal vault beneath the castle.",
+      "choices": [
+        {
+          "text": "🗝️ Sneak into the vault",
+          "next": "dragonRoyalVault"
+        },
+        {
+          "text": "🗣️ Request an audience",
+          "next": "dragonKingdomAudience"
+        },
+        {
+          "text": "🐉 Restore dragon form outside the city",
+          "next": "dragonRestoreForm"
+        }
+      ]
+    },
+
+    "dragonRoyalVault": {
+      "text": "Inside the royal vault, Drakon finds a shard of starlight suspended above a black stone pedestal. It resonates with the rune from the egg shell.",
+      "choices": [
+        {
+          "text": "✨ Claim the starlight shard",
+          "next": "dragonStarCrown"
+        },
+        {
+          "text": "🤝 Leave it with the kingdom",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "⬅️ Return to the kingdom",
+          "next": "dragonKingdomAudience"
+        }
+      ]
+    },
+
+    "dragonVolcanicGate": {
+      "text": "Deep beneath the mountains, a circular gate of black stone stands over a river of lava. The hatchling's presence makes its runes awaken.",
+      "choices": [
+        {
+          "text": "🔥 Open the volcanic gate",
+          "next": "dragonStarCrown"
+        },
+        {
+          "text": "🛡️ Seal the gate forever",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "⬅️ Return to the fortress",
+          "next": "dragonFortress"
+        }
+      ]
+    },
+
+    "dragonStarCrown": {
+      "text": "The scattered clues unite in a burst of starlight. A radiant crown forms above Drakon's head, granting him control over his transformation and the power to return to any path he has discovered.",
+      "choices": [
+        {
+          "text": "🌟 Use the crown to protect the realm",
+          "next": "dragonGoodEnding"
+        },
+        {
+          "text": "👑 Use the crown to rule the realm",
+          "next": "dragonDarkEnding"
+        },
+        {
+          "text": "🔄 Use the crown to choose a new transformation",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "dragonGoodEnding": {
+      "text": "Drakon chooses protection over conquest. In time, dragons return to the world under his watch, and the hatchling grows beside him as the first symbol of a peaceful new age.",
+      "choices": [
+        {
+          "text": "↩️ Rewind to the dragon crossroads",
+          "next": "dragonCrossroads"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
+    },
+
+    "dragonDarkEnding": {
+      "text": "Drakon claims power without restraint. Kingdoms bow, rival dragons scatter, and his name becomes a warning carried across the skies.",
+      "choices": [
+        {
+          "text": "↩️ Rewind to the dragon crossroads",
+          "next": "dragonCrossroads"
+        },
+        {
+          "text": "🔄 Choose a new transformation",
+          "next": "intro"
+        }
+      ]
     }
-  ]
-},
-"dragonMountains": {
-  "text": "Drakon beats his enormous wings and climbs toward the frozen mountain peaks. Snow whips across his scales as he spots a ruined stone fortress built into the cliffside. A deep roar echoes from somewhere inside.",
-  "choices": [
-    {
-      "text": "🏰 Land at the ruined fortress",
-      "next": "dragonFortress"
-    },
-    {
-      "text": "🔥 Answer the roar",
-      "next": "dragonRival"
-    },
-    {
-      "text": "↩️ Return to the crossroads",
-      "next": "dragonCrossroads"
-    }
-  ]
-},
-"dragonFortress": {
-  "text": "Drakon lands on the ancient stone fortress. Broken towers surround him. A gigantic golden egg rests on a pedestal in the center of the ruins.",
-  "choices": [
-    {
-      "text": "🥚 Inspect the egg",
-      "next": "dragonEgg"
-    },
-    {
-      "text": "🐉 Call into the ruins",
-      "next": "dragonRuins"
-    },
-    {
-      "text": "⬅️ Return to the mountains",
-      "next": "dragonMountains"
-    }
-  ]
-},
-"dragonEgg": {
-  "text": "As Drakon approaches, the enormous golden egg begins to glow. Tiny cracks spread across its shell. Something inside taps back when he touches it.",
-  "choices": [
-    {
-      "text": "🥚 Stay and watch",
-      "next": "dragonHatch"
-    },
-    {
-      "text": "🪽 Pick up the egg",
-      "next": "dragonCarryEgg"
-    },
-    {
-      "text": "⬅️ Return to the fortress",
-      "next": "dragonFortress"
-    }
-  ]
-},
-"dragonHatch": {
-  "text": "The golden shell cracks apart in a burst of warm light. A tiny dragon emerges, blinking up at Drakon before letting out a squeaky roar.",
-  "choices": [
-    {
-      "text": "🐉 Protect the hatchling",
-      "next": "dragonProtectHatchling"
-    },
-    {
-      "text": "🔍 Examine the broken shell",
-      "next": "dragonShell"
-    },
-    {
-      "text": "⬅️ Return to the egg chamber",
-      "next": "dragonEgg"
-    }
-  ]
-},
-"dragonProtectHatchling": {
-  "text": "Drakon curls one immense wing around the tiny hatchling. The baby chirps happily and presses against his scales. From deep within the fortress, heavy footsteps begin approaching.",
-  "choices": [
-    {
-      "text": "⚔️ Face the intruder",
-      "next": "dragonGuardian"
-    },
-    {
-      "text": "🏃 Escape with the hatchling",
-      "next": "dragonEscape"
-    },
-    {
-      "text": "⬅️ Return to the hatchling",
-      "next": "dragonHatch"
-    }
-  ]
-},
-"dragonShell": {
-  "text": "The shattered shell glitters with ancient runes. One fragment pulses with magical energy while another contains a faded map.",
-  "choices": [
-    {
-      "text": "✨ Touch the glowing rune",
-      "next": "dragonRune"
-    },
-    {
-      "text": "🗺️ Study the map",
-      "next": "dragonMap"
-    },
-    {
-      "text": "⬅️ Return to the hatchling",
-      "next": "dragonHatch"
-    }
-  ]
-},
-"dragonCarryEgg": {
-  "text": "Drakon carefully lifts the golden egg. It is surprisingly warm. As he carries it away, the fortress begins to shake violently.",
-  "choices": [
-    {
-      "text": "🏃 Fly away",
-      "next": "dragonEscape"
-    },
-    {
-      "text": "⬅️ Put the egg back",
-      "next": "dragonEgg"
-    }
-  ]
+  }
 }
-}
-    }

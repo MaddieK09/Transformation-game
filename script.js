@@ -18,7 +18,7 @@ let player = {
 };
 
 async function loadStory() {
-    const response = await fetch("story.json");
+const response = await fetch("story.json?version=2");
     story = await response.json();
 
     showScene(story.start);

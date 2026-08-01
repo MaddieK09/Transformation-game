@@ -83,6 +83,23 @@
       "next": "dragonKingdom"
     }
   ]
+},
+"dragonMountains": {
+  "text": "Drakon beats his enormous wings and climbs toward the frozen mountain peaks. Snow whips across his scales as he spots a ruined stone fortress built into the cliffside. A deep roar echoes from somewhere inside.",
+  "choices": [
+    {
+      "text": "🏰 Land at the ruined fortress",
+      "next": "dragonFortress"
+    },
+    {
+      "text": "🔥 Answer the roar",
+      "next": "dragonRival"
+    },
+    {
+      "text": "↩️ Return to the crossroads",
+      "next": "dragonCrossroads"
+    }
+  ]
 }
   }
 }

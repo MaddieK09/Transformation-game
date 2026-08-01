@@ -36,12 +36,16 @@
         "species": "Dragon",
         "form": "Dragon"
     },
-    "choices": [
-        {
-            "text": "Restart",
-            "next": "intro"
-        }
-    ]
+"choices": [
+  {
+    "text": "🐉 Continue as Drakon",
+    "next": "dragonCrossroads"
+  },
+  {
+    "text": "↩️ Restart",
+    "next": "intro"
+  }
+]
 },
 
     "wizard": {
